@@ -1,0 +1,20 @@
+{
+  "name": "feature-spec-authoring",
+  "version": "0.1.0",
+  "description": "Author a rigorous, business-language feature specification from a discovered need — user-story based, with acceptance criteria, scope seams, permissions, data/privacy flags, and open questions.",
+  "author": {
+    "name": "Relevantz Technology Service Inc.",
+    "email": "chandra.perumal@relevantz.com"
+  },
+  "homepage": "https://github.com/relevantzgit/software-engineering-system",
+  "repository": "https://github.com/relevantzgit/software-engineering-system.git",
+  "license": "MIT",
+  "keywords": [
+    "feature-spec",
+    "requirements",
+    "product",
+    "user-stories",
+    "acceptance-criteria",
+    "prd"
+  ]
+}

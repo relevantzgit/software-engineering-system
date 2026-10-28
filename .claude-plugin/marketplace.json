@@ -1,0 +1,28 @@
+{
+  "name": "software-engineering-system",
+  "owner": {
+    "name": "Relevantz Technology Service Inc.",
+    "email": "chandra.perumal@relevantz.com"
+  },
+  "metadata": {
+    "description": "Marketplace hosting the feature-spec-authoring plugin.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "feature-spec-authoring",
+      "source": ".",
+      "description": "Author a rigorous, business-language feature specification — user-story based, with acceptance criteria, scope seams, permissions, data/privacy flags, and open questions.",
+      "version": "0.1.0",
+      "license": "MIT",
+      "keywords": [
+        "feature-spec",
+        "requirements",
+        "product",
+        "user-stories",
+        "acceptance-criteria",
+        "prd"
+      ]
+    }
+  ]
+}
