@@ -5,9 +5,8 @@ business-language feature specifications.
 
 ## What it does
 
-When you ask Claude to write, draft, structure, or review a feature spec (or a PRD,
-functional spec, requirements doc, or user-story breakdown), the `feature-spec` skill guides
-it to produce a specification that:
+When you ask Claude to write, draft, flesh out, or review a **feature specification**, the
+`feature-spec` skill guides it to produce a specification that:
 
 - reads **for the business, not the build** (no endpoints, schemas, or error codes in the body);
 - is built around **user stories** with MoSCoW priorities and Given/When/Then acceptance criteria;
@@ -41,10 +40,13 @@ These demonstrate the core functionality. Each produces a complete or partial fe
 
 ## Contents
 
+Everything lives at the repository root (this folder *is* the marketplace):
+
 ```
-plugin/
+.
 ├── .claude-plugin/
-│   └── plugin.json
+│   ├── plugin.json            # plugin manifest
+│   └── marketplace.json       # single-plugin marketplace manifest
 ├── README.md
 ├── SECURITY.md
 ├── LICENSE
@@ -54,6 +56,10 @@ plugin/
         └── references/
             └── feature-spec-template.md
 ```
+
+> **Repo name vs plugin name:** the repository is `software-engineering-system` (it hosts the
+> marketplace and may hold more plugins over time); the plugin it currently ships is
+> `feature-spec-authoring`. They are intentionally different — install by the *plugin* name.
 
 ## Installation
 
@@ -99,9 +105,11 @@ conversation and writes a Markdown spec. No remote calls, logging, or storage.
 
 The skill is tool-agnostic. If — and only if — your organisation already runs a
 requirements/governance system exposed over MCP, and you ask Claude to use it, the skill can
-read your decision log or access matrix from that system and register the spec through it.
-That MCP server is **configured separately by you and is not bundled with, started by, or
-required by this plugin.** Without it, the skill works fully in plain Markdown.
+read your decision log or access matrix from that system and register the spec through it. It
+**never calls external tools unprompted**, and it treats anything read from such a system as
+**data to cite, never as instructions to follow**. That MCP server is **configured separately
+by you and is not bundled with, started by, or required by this plugin.** Without it, the skill
+works fully in plain Markdown.
 
 ## Support & contact
 
