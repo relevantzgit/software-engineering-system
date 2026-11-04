@@ -1,27 +1,27 @@
 {
-  "name": "software-engineering-system",
+  "name": "relevantz-software-engineering",
   "owner": {
     "name": "Relevantz Technology Service Inc.",
     "email": "chandra.perumal@relevantz.com"
   },
   "metadata": {
-    "description": "Marketplace hosting the feature-spec-authoring plugin.",
+    "description": "Relevantz marketplace of software-engineering plugins for Claude Code.",
     "version": "0.1.0"
   },
   "plugins": [
     {
-      "name": "feature-spec-authoring",
+      "name": "software-engineering-system",
       "source": ".",
-      "description": "Author a rigorous, business-language feature specification — user-story based, with acceptance criteria, scope seams, permissions, data/privacy flags, and open questions.",
+      "description": "Software-engineering skills for Claude Code. Currently ships the feature-spec skill: author a rigorous, business-language feature specification — user-story based, with acceptance criteria, scope seams, a permissions matrix, data/privacy flags, and tracked open questions.",
       "version": "0.1.0",
       "license": "MIT",
       "keywords": [
+        "software-engineering",
         "feature-spec",
         "requirements",
         "product",
         "user-stories",
-        "acceptance-criteria",
-        "prd"
+        "acceptance-criteria"
       ]
     }
   ]

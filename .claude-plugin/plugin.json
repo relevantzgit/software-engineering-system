@@ -1,7 +1,7 @@
 {
-  "name": "feature-spec-authoring",
+  "name": "software-engineering-system",
   "version": "0.1.0",
-  "description": "Author a rigorous, business-language feature specification from a discovered need — user-story based, with acceptance criteria, scope seams, permissions, data/privacy flags, and open questions.",
+  "description": "Software-engineering skills for Claude Code. Currently ships the feature-spec skill: author a rigorous, business-language feature specification — user-story based, with acceptance criteria, scope seams, a permissions matrix, data/privacy flags, and tracked open questions.",
   "author": {
     "name": "Relevantz Technology Service Inc.",
     "email": "chandra.perumal@relevantz.com"
@@ -10,11 +10,11 @@
   "repository": "https://github.com/relevantzgit/software-engineering-system.git",
   "license": "MIT",
   "keywords": [
+    "software-engineering",
     "feature-spec",
     "requirements",
     "product",
     "user-stories",
-    "acceptance-criteria",
-    "prd"
+    "acceptance-criteria"
   ]
 }
