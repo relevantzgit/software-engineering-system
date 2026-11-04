@@ -1,7 +1,8 @@
-# feature-spec-authoring
+# software-engineering-system
 
-A Claude Code plugin that packages one skill — **feature-spec** — for authoring rigorous,
-business-language feature specifications.
+A Claude Code plugin of software-engineering skills. It currently packages one skill —
+**feature-spec** — for authoring rigorous, business-language feature specifications, and will
+grow to include more software-engineering skills over time.
 
 ## What it does
 
@@ -57,9 +58,10 @@ Everything lives at the repository root (this folder *is* the marketplace):
             └── feature-spec-template.md
 ```
 
-> **Repo name vs plugin name:** the repository is `software-engineering-system` (it hosts the
-> marketplace and may hold more plugins over time); the plugin it currently ships is
-> `feature-spec-authoring`. They are intentionally different — install by the *plugin* name.
+> **Names:** the repository **and** the plugin are both named `software-engineering-system`
+> (the plugin is the installable unit; it holds the `feature-spec` skill today and more
+> software-engineering skills later). The marketplace that lists it is
+> `relevantz-software-engineering`.
 
 ## Installation
 
@@ -67,21 +69,21 @@ Hosted at **https://github.com/relevantzgit/software-engineering-system**. On Cl
 2.1.275 or later, install it in one step:
 
 ```
-/plugin install feature-spec-authoring --marketplace relevantzgit/software-engineering-system
+/plugin install software-engineering-system --marketplace relevantzgit/software-engineering-system
 ```
 
 Or add the marketplace first, then install:
 
 ```
 /plugin marketplace add relevantzgit/software-engineering-system
-/plugin install feature-spec-authoring
+/plugin install software-engineering-system
 ```
 
 To update later after the repo changes:
 
 ```
-/plugin marketplace update software-engineering-system
-/plugin install feature-spec-authoring
+/plugin marketplace update relevantz-software-engineering
+/plugin install software-engineering-system
 ```
 
 No configuration is required — the skill works with plain Markdown out of the box.

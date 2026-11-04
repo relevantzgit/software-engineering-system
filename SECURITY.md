@@ -4,7 +4,7 @@
 
 If you discover a security issue in this plugin, please report it privately to:
 
-**chandra.perumal@relevantz.com** (subject line: `SECURITY — feature-spec-authoring`)
+**chandra.perumal@relevantz.com** (subject line: `SECURITY — software-engineering-system`)
 
 Please include:
 - a description of the issue and its potential impact,
